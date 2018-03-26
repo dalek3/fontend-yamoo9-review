@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>비밀번호 찾기</title>
+</head>
+
+<body>
+    <h2>비밀번호 찾기</h2>
+    <div class="find_pw">
+        <p>
+            <strong>등록한 회원정보 또는 본인인증으로 비밀번호를 찾을 수 있습니다.</strong>
+        </p>
+        <div class="find_pw_l">
+            <form action="#" method="post">
+                <fieldset>
+                    <p>
+                        <strong>등록된 회원정보로 찾기</strong>
+                    </p>
+                    <p> 회원 가입 시 등록한 정보를 정확히 입력해주세요. </p>
+                    <p>
+                        <label>
+                            <input name="user_id" id="user_id" type="text" placeholder="아이디" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="user_name" id="user_name" type="text" placeholder="이름" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input name="user_email" id="user_email" type="email" placeholder="이메일" required>
+                        </label>
+                    </p>
+
+                    <button name="info_find" id="info_find" type="button">비밀번호 찾기</button>
+
+                </fieldset>
+            </form>
+        </div>
+        <div class="find_pw_r">
+            <form action="#" method="post">
+                <fieldset>
+                    <p>
+                        <strong>본인인증 수단으로 찾기</strong>
+                    </p>
+                    <p>아이디 확인 후 본인인증을 선택해주세요.</p>
+                    <p class="find_id_ok">
+                        <label>
+                            <input name="user_name" id="user_name" type="text" placeholder="아이디" required>
+                        </label>
+                        <label>
+                            <button type="button">확인</button>
+                        </label>
+                    </p>
+                    <p class="find_pw_select">
+                        <a href="#">아이핀 인증</a>
+                        <a href="#">휴대폰 본인인증</a>
+                    </p>
+                    <button name="auth_find" id="auth_find" type="button">비밀번호 찾기</button>
+                </fieldset>
+            </form>
+        </div>
+        <p>
+            위 방법으로 아이디를 찾을 수 없는 경우 <a href="#">고객센터</a>에 문의해주세요.
+        </p>
+    </div>
+</body>
+
+</html>
