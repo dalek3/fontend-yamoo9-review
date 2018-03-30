@@ -1,0 +1,68 @@
+/* 레이아웃 설정 */
+*{
+    margin:0;
+}
+body{
+    margin:100px;
+}
+.wrap{
+    padding:40px 0;
+    display: flex;
+}
+.wrap .left{
+    float: left;
+    padding-right:40px;
+    border-right:2px solid #999;
+}
+.wrap .right{
+    padding-left:80px;
+    padding-top:30px;
+}
+
+/* 메인 설정 */
+[lang=en] {
+    letter-spacing: 0;
+}
+h1,h2,h3,h4,p,li {
+    font-family: SpoqaHanSans;
+    line-height: 1.5;
+    letter-spacing: -0.025em;
+}
+h1,h2,h3,h4{
+    color: #333333;
+}
+p,li {
+    color: #666666;
+}
+ul{
+    width:220px;
+    padding:1.25rem 0rem 0rem 0rem;
+    list-style: none;
+}
+h1 {
+    font-size: 46px;
+    font-weight: 400;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+p.large {
+    font-size: 14px;
+    font-weight: 400;
+}
+p.small {
+    font-size: 13px;
+    font-weight: 400;
+}
+span{
+    font-weight:400;
+}
