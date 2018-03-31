@@ -1,0 +1,108 @@
+/***********************************
+ **          기본 세팅            **
+ ***********************************/
+ul,ol,h4{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-size:13px;
+    line-height:1.5;
+    font-family:'Malgun Gothic',sans-serif;
+    color:#222;
+    letter-spacing:-1px;
+}
+a{
+    color:#222;
+    text-decoration:none;
+}
+a:hover{
+    color:#118eff;
+    text-decoration:underline;
+}
+img {
+    width:30px;
+    height:30px;
+}
+li{
+    list-style: none;
+}
+.num_pctop{
+    background-image:url(../images/num_pctop_170405.png);
+}
+
+/***********************************
+ **         박스별 세팅           **
+ ***********************************/
+.wrap{
+    width:670px;
+}
+.wrap .box{
+    float:left;
+    width:295px;
+    height:150px;
+    margin-right:13px;
+    padding:7px 12px 0 12px;
+}
+
+/* box 세팅 */
+.box{
+    border:1px solid #ececec;
+    background-color: #fbfbfc;
+}
+
+/* recomm box 세팅 */
+.box_recomm .list_recomm{
+    width:321px;
+    margin-top:11px;
+}
+.box_recomm .list_recomm li{
+    float:left;
+    width:140px;
+    height:30px;
+    margin:0 16px 7px 0;
+    line-height:30px;
+}
+.box_recomm .list_recomm .thumb_recomm{
+    float:left;
+    width:30px;
+    height:30px;
+    margin-right:6px;
+}
+
+/* best box 세팅 */
+.box_best .list_ranking{
+    margin-top:7px;
+}
+.box_best .list_ranking li{
+    padding-bottom:3px
+}
+.list_ranking li{
+    float:left;
+    width:288px;
+    height:20px;
+    padding-bottom:5px;
+    line-height:18px;
+}
+.list_ranking .num_pctop{
+    float:left;
+    width:16px;
+    height:16px;
+    margin:3px 7px 0 0;
+    text-indent: -9999px;
+}
+.list_ranking .num1{
+    background-position:0 0;
+}
+.list_ranking .num2{
+    background-position:0 -20px;
+}
+.list_ranking .num3{
+    background-position:0 -40px;
+}
+.list_ranking .num4{
+    background-position:0 -60px;
+}
+.list_ranking .num5{
+    background-position:0 -80px;
+}
