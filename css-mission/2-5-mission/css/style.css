@@ -1,0 +1,35 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+    width:1400px;
+    height:4096px;
+}
+.header{
+    height:468px;
+    background-image:url(../images/css-layout__floating-02-header.png);
+}
+.main .main-top{
+    height:1751px;
+    background-image:url(../images/css-layout__floating-02-main-top.png);
+}
+.main .main-bottom{
+    height:1877px;
+    background-image:url(../images/css-layout__floating-02-main-bottom.png);
+}
+
+.header .box{
+    padding-top:342px;
+}
+.main-top .box{
+    float: left;
+    padding-top:201px;
+}
+
+.box{
+    padding-left:141px;
+}
+.box img{
+    float: left;
+}
