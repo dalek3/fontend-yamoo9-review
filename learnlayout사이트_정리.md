@@ -1,5 +1,6 @@
 출처:http://ko.learnlayout.com/
-#레이아웃
+
+# 레이아웃
 ## **margin:auto**
 - block 레벨 앨리먼트의 **width를 설정 후 margin 좌우 auto로 설정하면 가로 중앙에 오게 할 수있다.** <br>지정한 너비를 차지하고 나머지 공간은 두 마진에 균등하게 나뉘질 것이다.
     ```css
