@@ -20,17 +20,25 @@ body {
     position: absolute;
     top: 380px;
     right: 425px;
-    z-index: 10;
+    z-index: 20;
 }
 
 .robot-left {
     position: absolute;
     top: 385px;
     left: 350px;
-    z-index: 10;
+    z-index: 20;
 }
 
-.youtube {
+.youtube iframe{
+    position: absolute;
+    top: 340px;
+    left: 635px;
+    z-index: 10;
+    border:0;
+}
+
+.youtube img{
     position: absolute;
     top: 332px;
     left: 625px;
