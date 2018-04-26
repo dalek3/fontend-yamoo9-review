@@ -13,7 +13,7 @@ body{
 .wrap .left{
     float: left;
     padding-right:40px;
-    border-right:0.125rem solid #eee;
+    border-right:0.125 solid #eee;
 }
 .wrap .right{
     padding-left:80px;
