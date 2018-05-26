@@ -1,0 +1,286 @@
+body, nav, ul, li, p, div, table, thead, tbody, th, td, h3{
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+th {
+    font-weight: normal;
+}
+
+td {
+    text-align: center;
+}
+
+thead {
+    font-size: 30px;
+}
+
+tbody {
+    font-size: 24px;
+}
+
+.gotham {
+    font-family: "Gotham";
+}
+
+.gotham.is-book {
+    font-weight: normal;
+}
+
+.gotham.is-light {
+    font-weight: 300;
+}
+.wrap {
+    width: 1750px;
+    height: 1000px;
+}
+
+.todo-area {
+    position: relative;
+    float:left;
+    width: 800px;
+    height: 1000px;
+    background: #8bc34a;
+    border-left: 50px solid #78a840;
+    color: #fff;
+    box-shadow: 5px 0px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 505px;
+}
+
+.header .navicon {
+    position: relative;
+    top: 69px;
+    left: 50px;
+}
+
+.navicon-bar {
+    display: block;
+    position: relative;
+    width: 54px;
+    height: 6px;
+    background-color: #fff;
+}
+
+.navicon-bar::before,
+.navicon-bar::after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.navicon-bar::before {
+top: -15px;
+}
+
+.navicon-bar::after {
+top: 15px;
+}
+
+.header .moreicon {
+    position: relative;
+    float: right;
+    top: 61px;
+    right: 50px;
+}
+
+.moreicon-bar {
+    display: block;
+    position: relative;
+    width: 11px;
+    height: 11px;
+    background-color: #fff;
+    border-radius: 50px; 
+}
+
+.moreicon-bar::before,
+.moreicon-bar::after {
+    background-color: #fff;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 50px; 
+}
+
+.moreicon-bar::before {
+top: -17px;
+}
+
+.moreicon-bar::after {
+top: 17px;
+}
+
+.header h3{
+    font-size: 84px;
+    padding-top: 308px;
+    padding-left: 74px;
+    line-height: 1.24;
+}
+
+.reminder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 495px;
+    padding-left: 74px;
+}
+.reminder p {
+    position: relative;
+    font-size: 30px;
+    padding-top: 183px;
+    
+}
+
+.reminder ul {
+    position: relative;
+    font-size: 30px;
+    padding-top: 22px;
+    line-height: 2.18;
+}
+
+/* 커스텀 체크박스 */
+.reminder .check_todo + label::before {
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    background: #fff;
+    border-radius: 22.43px;
+    vertical-align: middle;
+}
+
+.reminder .check_todo:checked + label:before {
+  background: #fff url(https://raw.githubusercontent.com/dalek3/fontend-yamoo9-review/master/css-mission/2-8-mission/images/check.png) center no-repeat;
+  cursor:pointer;
+}
+
+.calendar-area {
+    float: left;
+    width: 900px;
+    height: 1000px;
+    color: #808080;
+}
+
+.calendar-header {
+    width: 100%;
+    height: 347px;
+}
+
+.calendar-main{
+    width: 100%;
+    height: 488px;
+}
+
+.calendar-header h3 {
+    position: relative;
+    float: right;
+    top: 40px;
+    right: 47px;
+    font-size: 60px;
+
+}
+
+.calendar-main ul {
+    padding-left: 85px; 
+    word-spacing: 15px;
+    font-size: 18px;
+    color: #bfbfbf;
+}
+
+.calendar-main li {
+    display: inline;
+}
+
+.calendar-main li:nth-child(4) {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    color: #808080;
+}
+
+.calendar-main table {
+    padding-left: 30px;
+    width: 60px;
+    table-layout: fixed;
+    border-spacing: 53px 15px;
+}
+
+.calendar-main table colgroup col {
+    width: 60px;
+}
+
+.calendar-main tr {
+    height: 60px;
+}
+
+.calendar-main td {
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#today {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #8bc34a;
+    color:#fff;
+}
+
+.future {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #dcedc8;
+    border-radius: 10px;
+}
+
+.calendar-footer {
+    position: relative;
+    width: 100%;
+    height: 165px;
+}
+
+.Add-btn {
+    position: absolute;
+    float: right;
+    bottom: 50px;
+    right: 50px;
+    width: 90px;
+    height: 90px;
+    background: #8bc34a;
+    border-radius: 50px; 
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.Add-btn svg {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+/* 접근성(accessibility, a11y)을 고려한 화면 감춤 */
+.a11y-hidden {
+    overflow: hidden;
+    position: absolute !important;
+    clip:     rect(0,0,0,0);
+    width:    1px;
+    height:   1px;
+    margin:   -1px;
+    border:   0;
+    padding:  0;
+  }
+  

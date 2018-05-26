@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>캘린더(Calendar) 위젯 디자인</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="todo-area">
+            <div class="header">
+                <label class="navicon">
+                    <span class="navicon-bar"></span>
+                </label>
+                <label class="moreicon">
+                    <span class="moreicon-bar"></span>
+                </label>
+
+                <!-- light 84pt -->
+                <h3 class="gotham is-light">
+                    FRIDAY
+                    <br> APRIL 3RD
+                </h3>
+            </div>
+            <div class="reminder gotham is-book">
+                <!-- book 29.9pt -->
+                <p>
+                    REMINDERS
+                </p>
+
+                <ul>
+                    <li>
+                        <input type="checkbox" id="check_todo1" class="a11y-hidden check_todo">
+                        <label for="check_todo1">Make an awesome design.</label>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="check_todo2" class="a11y-hidden check_todo">
+                        <label for="check_todo2">Amaze the world :D</label>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="calendar-area">
+            <div class="calendar-header">
+                <h3 class="gotham is-light">2015</h3>
+            </div>
+            <div class="calendar-main gotham is-book">
+                <ul>
+                    <li>JAN</li>
+                    <li>FEB</li>
+                    <li>MAR</li>
+                    <li>APR</li>
+                    <li>MAY</li>
+                    <li>JUN</li>
+                    <li>JUL</li>
+                    <li>AUG</li>
+                    <li>SEP</li>
+                    <li>OCT</li>
+                    <li>NOV</li>
+                    <li>DEC</li>
+                </ul>
+
+                <table aria-describedby="calendarApril">
+                    <caption id="calendarApril" class="a11y-hidden">April</caption>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th id="week-1" scope="col">MON</th>
+                            <th id="week-2" scope="col">TUE</th>
+                            <th id="week-3" scope="col">WED</th>
+                            <th id="week-4" scope="col">THU</th>
+                            <th id="week-5" scope="col">FRI</th>
+                            <th id="week-6" scope="col">SAT</th>
+                            <th id="week-7" scope="col">SUN</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td headers="week-3">1</td>
+                            <td headers="week-4">2</td>
+                            <td headers="week-5" id="today">3</td>
+                            <td headers="week-6">4</td>
+                            <td headers="week-7">5</td>
+                        </tr>
+                        <tr>
+                            <td headers="week-1">6</td>
+                            <td headers="week-2">7</td>
+                            <td headers="week-3">8</td>
+                            <td headers="week-4">9</td>
+                            <td headers="week-5">10</td>
+                            <td headers="week-6">11</td>
+                            <td headers="week-7">12</td>
+                        </tr>
+                        <tr>
+                            <td headers="week-1">13</td>
+                            <td headers="week-2">14</td>
+                            <td headers="week-3">15</td>
+                            <td headers="week-4">16</td>
+                            <td headers="week-5">17</td>
+                            <td headers="week-6" class="future">18</td>
+                            <td headers="week-7">19</td>
+                        </tr>
+                        <tr>
+                            <td headers="week-1">20</td>
+                            <td headers="week-2">21</td>
+                            <td headers="week-3" class="future">22</td>
+                            <td headers="week-4">23</td>
+                            <td headers="week-5">24</td>
+                            <td headers="week-6">25</td>
+                            <td headers="week-7">26</td>
+                        </tr>
+                        <tr>
+                            <td headers="week-1">27</td>
+                            <td headers="week-2">28</td>
+                            <td headers="week-3">29</td>
+                            <td headers="week-4">30</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="calendar-footer">
+                <div class="Add-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" height="30px">
+                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.140,17.139 L17.140,29.998 L12.855,29.998 L12.855,17.139 L0.000,17.139 L0.000,12.854 L12.855,12.854 L12.855,-0.005 L17.140,-0.005 L17.140,12.854 L29.995,12.854 L29.995,17.139 L17.140,17.139 Z"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
